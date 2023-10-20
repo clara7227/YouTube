@@ -1,0 +1,498 @@
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+h3 {
+  font-size: 1em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 0.95em;
+  font-weight: 500;
+}
+main {
+  grid-area: 2 / 2 /3/3;
+}
+.App {
+  text-align: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px calc(100% - 200px);
+  grid-template-rows: 40px calc(100% - 200px);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border: 2px solid #555;
+  border-radius: 6px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Style the scrollbar buttons */
+::-webkit-scrollbar-button {
+  background-color: #ddd;
+}
+
+/* Style the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #f0f0f0;
+}
+.ContainerWeb {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/*TOOLTIPS*/
+#my-tooltip {
+  font-size: 0.7em;
+  padding: 0.35em 0.6em 0.45em;
+  opacity: 0.2;
+}
+
+/*.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}*/
+
+.App-link {
+  color: #61dafb;
+}
+.YouTube img {
+  padding: 0.3em 0 0 0;
+  height: 1em;
+  width: 5em;
+  object-fit: cover;
+}
+/*MENU*/
+.MainMenuContainer {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  z-index: 14;
+  border-bottom: 1px solid rgb(163, 163, 163);
+}
+.MainMenu {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.25em 1.5em;
+}
+
+.MenuContent {
+  position: absolute;
+  z-index: 11;
+}
+
+.AreaMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.AreaMenu .Icon {
+  color: rgb(115, 115, 115);
+  padding: 0.2em 0.5em 0 0.5em;
+}
+
+#IconMenu {
+  margin: 6px 12px;
+  width:100%;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+/*USER AREA*/
+.NotificationMenu {
+  position: absolute;
+  margin: -1.4em 0 0 -30em;
+  left: auto;
+  z-index: 10;
+
+  width: 30em;
+  box-shadow: 10px 5px 25px rgba(57, 57, 57, 0.5);
+  height: 70vh;
+  overflow: auto;
+  transition: 1s ease-in-out opacity;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+}
+.NotificationTitle {
+  margin: 0px;
+  text-align: left;
+  padding: 0.5em 0 0.8em 1em;
+}
+
+#NotificationLogoImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.NotificationTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px rgb(226, 226, 226) solid;
+}
+.NotificationSettingIcon {
+  margin: 0.6em;
+  color: grey;
+}
+.NotificationMenuItems {
+  margin: 0px;
+  padding: 0.5em;
+}
+.NotificationMenuItems li {
+  list-style-type: none;
+  margin-bottom: 1.5em;
+}
+.NotificationMenuItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr ;
+  grid-gap: 1em;
+  list-style-type: none;
+  padding:0 0.6em 0 0.6em;
+
+}
+.NotificationContent h5{
+  margin: 0px;
+}
+
+.NotificationContent p{
+  text-align: left;
+  font-size: 0.85em;
+  color: rgb(88, 88, 88);
+  margin-bottom: 1em;
+}
+.NotificationMenuItem img {
+  width: 100px;
+  height: 50px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+/*SEARCH BAR*/
+.SearchBarArea {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 4px;
+  display: flex;
+}
+.SearchInput {
+  padding: 0.3em 0.5em;
+  width: 28em;
+  border: 0px;
+}
+.SearchButton {
+  background-color: rgb(235, 235, 235);
+  border-left: 1px solid rgb(163, 163, 163);
+  padding: 0.15em 1em 0.15em 1em;
+  border-radius: 0px 4px 4px 0px;
+  color: GREY;
+}
+
+/*SIDEMENU*/
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.3); /* Negro al 30% de opacidad */
+  position: relative; /* Necesario para que la capa cubra el contenido */
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  /* MARGIN: -45px 0 0 0 ;*/
+}
+aside {
+  height: 100%;
+}
+
+.SideMenu {
+  position: absolute;
+  display: flex;
+  margin: 1px;
+  z-index: 12;
+  justify-content: space-between;
+  width: 14em;
+  box-shadow: 10px 15px 25px rgba(57, 57, 57, 0.5);
+  height: 100%;
+  overflow: auto;
+  transition: 1s ease-in-out opacity;
+}
+
+.SmallSideMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  z-index: 10;
+  justify-content: left;
+  max-width: 8em;
+  height: 100vh;
+  overflow: hidden;
+  transition: 200ms ease-in-out;
+}
+.SmallSideMenu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 0.2em;
+}
+
+.SmallSideMenu ul li {
+  list-style-type: none;
+  font-size: 0.75em;
+  margin: 1em 0;
+}
+
+.SmallSideMenu ul li p {
+  margin: 0.2em;
+}
+
+.IconSmallSideMenu {
+  color: rgb(46, 46, 46);
+}
+.SideMenu ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+  height: 200vh;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: 200ms ease-in-out;
+}
+
+.SideMenuPart {
+  z-index: 11;
+  position: relative;
+  border-bottom: rgb(190, 190, 190) 1px solid;
+  display: flex;
+  flex-direction: column;
+  width: 300vh;
+}
+
+.SideMenuPart:last-child {
+  border: 0px solid grey;
+  position: relative;
+  z-index: 11;
+}
+.TitleSideMenuPart {
+  display: flex;
+  justify-content: left;
+  padding: 0.5em 2em 0.75em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.ItemSideMenu {
+  display: flex;
+  padding: 0.35em 0 0.2em 2em;
+}
+.ItemSideMenu:first-child {
+  display: flex;
+  padding: 0.75em 0em 0.15em 2em;
+}
+.ItemSideMenu:last-child {
+  display: flex;
+  padding: 0.25em 0em 0.75em 2em;
+}
+.ItemSideMenu:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.ItemSideMenu .Text {
+  margin: 0.15em 0em 0 1em;
+  font-size: 0.75em;
+  color: rgb(77, 77, 77);
+}
+.IconSideMenu {
+  color: rgb(83, 83, 83);
+}
+
+/*RECOMMENDED*/
+
+.Tags ul {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+  padding: 0;
+  overflow: clip;
+}
+.Tags ul li {
+  list-style: none;
+  background-color: rgb(231, 231, 231);
+  border-radius: 4px;
+  font-size: 0.85em;
+  margin: 0 0.5em;
+  padding: 0;
+}
+.Tags ul li p {
+  padding: 0em 0.5em;
+  margin: 0.4em 0.25em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.Video {
+  margin: 0 0 3em 0;
+}
+.ContainerRecommended {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  z-index: 8;
+  position: relative;
+  margin: 0 3em 0 0;
+}
+.NotificationMenuItem {
+  display: flex;
+  justify-content: space-between;
+}
+.ImgRecomendados {
+  width: 100%;
+  border-radius: 16px;
+}
+.WrittenContentVideo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0.6em 0 0 1.4em;
+}
+.ContainerTitleIcon {
+  display: flex;
+}
+.IconUser {
+  width: 10vh;
+  height: 10vh;
+  margin: 0.4em 0 0 0;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.TitleVideo {
+  margin: 0;
+  text-align: left;
+}
+.InfoVideo {
+  display: flex;
+}
+.InfoVideo p {
+  margin: 0 0.3em 0 0;
+  font-size: 0.8em;
+  color: #767676;
+}
+.UserVideo {
+  margin: 0;
+  font-size: 0.8em;
+  color: #767676;
+}
+
+/*MORE BUTTON*/
+.MoreButtonLine {
+  border: solid 1px rgb(177, 177, 177);
+  margin: -2em  0 0 ;
+  width: 100%;
+}
+.MoreButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+.MoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MoreButtonStyleContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.MoreButtonStyle {
+  border-radius: 30px;
+  border: 1px solid rgb(194, 194, 194);
+  width: 18em;
+  display: flex;
+  padding: 1em 2em ;
+  justify-content: center;
+}
+.MoreButtonStyle:hover {
+  border-radius: 30px;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: rgb(242, 242, 242);
+  width: 18em;
+  display: flex;
+  padding: 1em 2em ;
+  justify-content: center;
+}
+
+.MoreButtonStyle h3{
+  padding: 0;
+  margin: 0 0.5em 0.2em 0;
+}
+.MoreButton button {
+  margin: 0.2em;
+  align-self: center;
+  width: 100vw;
+}
+.MoreButtonAction {
+  width: 100px;
+}
+
+/*IMGRECOMENDADOS SHOULD FIT PARENT*/
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*SHORTS*/
+.TitleSection {
+  display: flex;
+  align-self: left;
+}
+.TitleSection h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.ContainerShorts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  z-index: 8;
+  position: relative;
+  margin: 0 3em 0 0;
+}
+.ImgShorts {
+  height: 22em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
