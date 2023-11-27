@@ -11,25 +11,25 @@ class SideMenu extends Component {
         <ul>
           <li>
             <a href="#" className="IconSmallSideMenu">
-              <MaterialSymbol icon="home" size={34} grade={-25} />
+              <MaterialSymbol icon="home" weight={200}size={34} grade={-25} />
             </a>
             <p> Inicio</p>
           </li>
           <li>
             <a href="#" className="IconSmallSideMenu">
-              <MaterialSymbol icon="camera" size={34} grade={-25} />
+              <MaterialSymbol icon="camera"weight={200} size={34} grade={-25} />
             </a>
             <p> Shorts</p>
           </li>
           <li>
             <a href="#" className="IconSmallSideMenu">
-              <MaterialSymbol icon="subscriptions" size={34} grade={-25} />
+              <MaterialSymbol icon="subscriptions"weight={200} size={34} grade={-25} />
             </a>
             <p> Subscripciones</p>
           </li>
           <li>
             <a href="#" className="IconSmallSideMenu">
-              <MaterialSymbol icon="people" size={34} grade={-25} />
+              <MaterialSymbol icon="people"weight={200} size={34} grade={-25} />
             </a>
             <p> Bibliotecas</p>
           </li>

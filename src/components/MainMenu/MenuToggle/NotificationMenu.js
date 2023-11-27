@@ -17,7 +17,7 @@ class SideMenu extends Component {
        <div class="NotificationTitleContainer">
         <h3 className="NotificationTitle">Notificaciones</h3>
         <a href="#" className="NotificationSettingIcon">
-          <MaterialSymbol icon="Settings" size={20} fill grade={-25} />
+          <MaterialSymbol icon="Settings" size={20}  grade={-25} />
         </a>
         </div>
         <ul className="NotificationMenuItems">

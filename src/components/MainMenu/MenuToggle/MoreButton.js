@@ -7,33 +7,32 @@ import MoreButtonInterface from "./MoreButtonInterface.js";
 function MoreButton() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    console.log("Botón clickeado");
+    setIsOpen(prevIsOpen => !prevIsOpen); // Actualiza el estado basado en el estado actual prevIsOpen
   };
-
+  
+  // MoreButtonContainer
   return (
-    <div className="MoreButtonContainer">
-      <button onClick={toggleMenu} id="IconMenu">
+    <div className="MoreButtonContainerEmpty">
+     
         <div className="MoreButtonAction"></div>
-
+       
         {isOpen ? (
-          <div>
+        
             <Recommended2 />
-            <div className="MoreButtonStyleContainer">
-              <MoreButtonInterface
-                title="Mostrar menos"
-                icon="keyboard_arrow_up"
-              />
-              
-            </div>
-          </div>
+            
+          
         ) : (
         
-          <div className="MoreButtonStyleContainer">
-            <MoreButtonInterface title="Mostrar más" icon="expand_more" />
-            
-          </div>
+        <div></div>
         )}
+         <button onClick={toggleMenu} id="IconMore">
+        <MoreButtonInterface
+                title={!isOpen ? "Mostrar más" : "Mostrar menos"}
+                icon={isOpen ? "keyboard_arrow_up" : "keyboard_arrow_down"}
+              />
       </button>
+        
     </div>
   );
 }

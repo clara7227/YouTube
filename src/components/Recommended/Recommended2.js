@@ -14,13 +14,14 @@ import ytImage from "../../img/yt.png";
 import MoreButton from "../MainMenu/MenuToggle/MoreButton";
 
 class Recommended2 extends Component {
+  
   render() {
     return (
-      <div>
+      
         <div className="ContainerRecommended">
           <RecommendedItem
             img={Imagen5}
-            title="pop culture moments we don't talk abput enough"
+            title="pop culture moments we don't talk about enough"
           />
           <RecommendedItem
             img={Imagen1}
@@ -40,7 +41,7 @@ class Recommended2 extends Component {
             title="Phoebe Waller-Bridge plays unpopular opinion"
           />
         </div>
-      </div>
+    
     );
   }
 }

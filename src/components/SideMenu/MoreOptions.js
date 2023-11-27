@@ -3,28 +3,28 @@ import { MaterialSymbol } from "react-material-symbols";
 
 const MoreOptions = ({ user }) => (
 <div className="SideMenuPart">
-              <div className="TitleSideMenuPart">MÁS SOBRE YOUTUBE</div>
+              <div className="TitleSideMenuPart">Más sobre youtube</div>
               <li className="ItemSideMenu">
                 <a href="#" className="IconSideMenu">
-                  <MaterialSymbol icon="theaters" size={20} grade={-25} />
+                  <MaterialSymbol icon="theaters" weight={200} size={26} grade={-25} />
                 </a>
                 <div className="Text">YouTube Premium</div>
               </li>
               <li className="ItemSideMenu">
                 <a href="#" className="IconSideMenu">
-                  <MaterialSymbol icon="youtube_activity" size={20} grade={-25} />
+                  <MaterialSymbol icon="youtube_activity" weight={200} size={26} grade={-25} />
                 </a>
                 <div className="Text">Películas de Youtube</div>
               </li>
               <li className="ItemSideMenu">
                 <a href="#" className="IconSideMenu">
-                  <MaterialSymbol icon="youtube_activity" size={20} grade={-25} />
+                  <MaterialSymbol icon="youtube_activity" weight={200} size={26} grade={-25} />
                 </a>
                 <div className="Text">Películas de Youtube</div>
               </li>
               <li className="ItemSideMenu">
                 <a href="#" className="IconSideMenu">
-                  <MaterialSymbol icon="youtube_activity" size={20} grade={-25} />
+                  <MaterialSymbol icon="youtube_activity" weight={200} size={26} grade={-25} />
                 </a>
                 <div className="Text">Películas de Youtube</div>
               </li>

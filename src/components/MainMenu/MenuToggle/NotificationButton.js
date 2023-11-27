@@ -13,14 +13,14 @@ function NotificationButton() {
   return (
     <div>
       <Tooltip id="my-tooltip" />
-      <a data-tooltip-id="my-tooltip" data-tooltip-content="Notificación">
+      <a className="UserAreaIcon"data-tooltip-id="my-tooltip" data-tooltip-content="Notificación">
         <a
           href="#"
           className="Icon"
           onClick={toggleMenu}
           id="NotificationButton"
         >
-          <MaterialSymbol icon="notifications" size={20} fill grade={-25} />
+          <MaterialSymbol icon="notifications" size={24} weight={200} grade={-25} />
         </a>
       </a>
       <Tooltip id="my-tooltip" />

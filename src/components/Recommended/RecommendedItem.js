@@ -16,10 +16,10 @@ class RecommendedItem extends Component {
             <img className="IconUser" src={this.props.img}></img>
             <div className="WrittenContentVideo">
               <RecommendedItemContent title={this.props.title} />
-              <p className="UserVideo">User</p>
+              <p className="UserVideo">Estirando el chicle</p>
               <div className="InfoVideo">
-                <p>Reproductions</p>
-                <p>Date</p>
+                <p>12 K visualizaciones ·</p>
+                <p> hace 5 meses</p>
               </div>
             </div>
           </div>
