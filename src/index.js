@@ -1,8 +1,7 @@
-import React, { useState, createContext, useContext } from "react";
+import React  from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Contador from "./Contador";
 
 
 import App from "./App"

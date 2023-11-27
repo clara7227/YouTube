@@ -1,8 +1,5 @@
-import { Component } from "react";
-import "react-material-symbols/dist/rounded.css";
-import { MaterialSymbol } from "react-material-symbols";
-import ytImage from "../../img/yt.png"
 
+import "react-material-symbols/dist/rounded.css";
 const ShortsItemContent = ({ title }) => (
   <h4> 
          <div> 

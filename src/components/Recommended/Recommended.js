@@ -1,6 +1,5 @@
 import { Component } from "react";
 import "react-material-symbols/dist/rounded.css";
-import { MaterialSymbol } from "react-material-symbols";
 import RecommendedItem from "./RecommendedItem";
 import Imagen1 from "../../img/img1.JPG";
 import Imagen2 from "../../img/img2.JPG";
@@ -8,9 +7,6 @@ import Imagen3 from "../../img/img3.JPG";
 import Imagen4 from "../../img/img4.JPG";
 import Imagen5 from "../../img/img5.JPG";
 import Imagen6 from "../../img/img6.JPG";
-import Imagen7 from "../../img/img7.JPG";
-import Imagen8 from "../../img/img8.JPG";
-import ytImage from "../../img/yt.png";
 import MoreButton from "../MainMenu/MenuToggle/MoreButton";
 
 class Recommended extends Component {

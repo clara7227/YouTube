@@ -1,7 +1,7 @@
 import "react-material-symbols/dist/rounded.css";
 import { MaterialSymbol } from "react-material-symbols";
 import { Tooltip } from "react-tooltip";
-import React, { useState } from "react";
+import React from "react";
 import NotificationButton from "./MenuToggle/NotificationButton";
 
 

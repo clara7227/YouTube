@@ -1,7 +1,5 @@
 import { Component } from "react";
 import "react-material-symbols/dist/rounded.css";
-import { MaterialSymbol } from "react-material-symbols";
-import Imagen1 from "../../img/yt.png";
 import ShortsItemContent from "./ShortsItemContent";
 
 class ShortsItem extends Component {
@@ -9,7 +7,7 @@ class ShortsItem extends Component {
     return (
       <div>
         <div>
-          <img class="ImgShorts" src={this.props.img} />
+          <img class="ImgShorts" src={this.props.img} alt="Imagen-Short" />
         </div>
         <ShortsItemContent title={this.props.title}/>
       </div>

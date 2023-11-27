@@ -1,7 +1,5 @@
 import { Component } from "react";
 import "react-material-symbols/dist/rounded.css";
-import { MaterialSymbol } from "react-material-symbols";
-
 
 //NOTAS:
 //PASAR PARÁMETROS POR LOS FORMULARIOS

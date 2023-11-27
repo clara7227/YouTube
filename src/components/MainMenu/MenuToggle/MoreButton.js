@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "react-material-symbols/dist/rounded.css";
-import { MaterialSymbol } from "react-material-symbols";
 import Recommended2 from "../../Recommended/Recommended2.js";
 import MoreButtonInterface from "./MoreButtonInterface.js";
 

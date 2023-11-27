@@ -1,19 +1,17 @@
 import { Component } from "react";
 import "react-material-symbols/dist/rounded.css";
-import { MaterialSymbol } from "react-material-symbols";
-import Imagen1 from "../../img/yt.png";
 import RecommendedItemContent from "./RecommendedItemContent";
 
 class RecommendedItem extends Component {
   render() {
     return (
-      <div class="Video">
+      <div className="Video">
         <div>
-          <img className="ImgRecomendados" src={this.props.img} />
+          <img className="ImgRecomendados" src={this.props.img} alt="Imagen-Video-Recomendado"/>
         </div>
         <div>
           <div className="ContainerTitleIcon">
-            <img className="IconUser" src={this.props.img}></img>
+            <img className="IconUser" src={this.props.img} alt="Avatar-Usuario"></img>
             <div className="WrittenContentVideo">
               <RecommendedItemContent title={this.props.title} />
               <p className="UserVideo">Estirando el chicle</p>

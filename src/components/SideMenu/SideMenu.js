@@ -1,6 +1,5 @@
 import { Component } from "react";
 import "react-material-symbols/dist/rounded.css";
-import { MaterialSymbol } from "react-material-symbols";
 import Subs from "./Subs";
 import Principal from "./Principal";
 import UserAreaSide from "./UserAreaSide";
